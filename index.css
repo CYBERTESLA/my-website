@@ -1,6 +1,6 @@
 a {
     color: #f00;
-    /* color: #6741d9 (purple) */ 
+    /* color: #6741d9 (purple) */
 }
 
 h2 {
@@ -8,10 +8,10 @@ h2 {
 }
 
 h1 {
-    font-family: IBM Plex Serif;    
+    font-family: IBM Plex Serif;
 }
 
-::selection {   
+::selection {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
@@ -29,11 +29,11 @@ How did I center the site?
 
 #greeting {
     margin: 0 auto;
-    display: flex; 
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     font-size: 70px;
 }
 
@@ -53,7 +53,7 @@ header {
     background-color: #1E1E1E;
     width: 100%;
     height: 500px;
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -64,18 +64,20 @@ header {
 }
 */
 
-html, body {
-    width: 100%; 
+html,
+body {
+    width: 100%;
     height: 100%;
     margin: 0px auto;
     background: #fff;
     color: #333;
-    /* font-family: 'Helvetica', 'Arial', sans-serif; #From Nicky*/ 
+    /* font-family: 'Helvetica', 'Arial', sans-serif; #From Nicky*/
     font-family: "IBM Plex Sans Thai Looped";
     font-size: 23px;
     font-weight: 100;
     line-height: 1.4em;
 }
+
 /*
 width: 100%; and height: 100%; ensure that the html and body elements take up the full viewport.
 margin: 0; removes any default margin that might be applied by the browser, ensuring the content starts from the edge of the viewport.
@@ -86,6 +88,7 @@ margin: 0; removes any default margin that might be applied by the browser, ensu
     max-width: 800px;
     margin: 0 auto;
 }
+
 /*
 width: 100%; allows the containers to take up the full width of their parent container.
 max-width: 800px; limits the maximum width of these containers to 800px, ensuring they don't stretch too wide on large screens.
@@ -93,23 +96,35 @@ margin: 0 auto; centers the containers horizontally by setting the left and righ
 */
 
 
-.container { /* For keeping the image and mascot side by side */
-    display: flex; /* flexbox */ 
-    justify-content: center; /* centers the child elements horizontally within the .container. */
-    flex-wrap: nowrap; /* prevents the images from wrapping to the next line on smaller screens. If you want them to wrap, you can use flex-wrap: wrap;. */
+.container {
+    /* For keeping the image and mascot side by side */
+    display: flex;
+    /* flexbox */
+    justify-content: center;
+    /* centers the child elements horizontally within the .container. */
+    flex-wrap: nowrap;
+    /* prevents the images from wrapping to the next line on smaller screens. If you want them to wrap, you can use flex-wrap: wrap;. */
 }
+
 .image1 {
-    flex: 1 1 70%; /* Adjust the width as needed */
-    margin: 10px; /* Space between images */
+    flex: 1 1 70%;
+    /* Adjust the width as needed */
+    margin: 10px;
+    /* Space between images */
 }
+
 .image2 {
-    flex: 1 1 20%; /* Adjust the width as needed */
-    margin: 10px; /* Space between images */
+    flex: 1 1 20%;
+    /* Adjust the width as needed */
+    margin: 10px;
+    /* Space between images */
 }
+
 .image1 img {
     width: 100%;
     height: auto;
 }
+
 .image2 img {
     width: 100%;
     height: auto;
@@ -119,12 +134,20 @@ margin: 0 auto; centers the containers horizontally by setting the left and righ
 
 .quote {
     font-style: italic;
-    color: #555; /* Adjust the color as needed */
-    border-left: 4px solid #ccc; /* Left border for the quote */
-    padding-left: 10px; /* Space between the border and the text */
-    margin: 20px 0; /* Space above and below the quote */
-    background-color: #f9f9f9; /* Optional: background color for the quote */
-    padding: 10px 20px; /* Padding inside the quote */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for a nice effect */
+    color: #555;
+    /* Adjust the color as needed */
+    border-left: 4px solid #ccc;
+    /* Left border for the quote */
+    padding-left: 10px;
+    /* Space between the border and the text */
+    margin: 20px 0;
+    /* Space above and below the quote */
+    background-color: #f9f9f9;
+    /* Optional: background color for the quote */
+    padding: 10px 20px;
+    /* Padding inside the quote */
+    border-radius: 5px;
+    /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: shadow for a nice effect */
 }
