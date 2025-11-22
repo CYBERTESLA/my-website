@@ -120,12 +120,12 @@ margin: 0 auto; centers the containers horizontally by setting the left and righ
     /* Space between images */
 }
 
-.image1 img {
+.container .image1 img {
     width: 100%;
     height: auto;
 }
 
-.image2 img {
+.container .image2 img {
     width: 100%;
     height: auto;
 }
@@ -150,4 +150,93 @@ margin: 0 auto; centers the containers horizontally by setting the left and righ
     /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* Optional: shadow for a nice effect */
+}
+
+/* Utility Classes */
+.color-red {
+    color: #EC3750;
+}
+
+.color-purple {
+    color: #BE4BDB;
+}
+
+.color-blue {
+    color: #228BE6;
+}
+
+.color-dark-purple {
+    color: #6741D9;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+/* Blog Post Styles */
+.blog-post img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Specific Image Overrides */
+.blog-post .quote img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.blog-post .mascot3 {
+    width: 250px;
+    max-width: 100%;
+    margin: 20px 0;
+    /* Align left and add vertical spacing */
+}
+
+/* Clickable Box Styles (from blog/index.css) */
+.clickable-box {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    /* Ensure it doesn't overflow on small screens */
+    height: 350px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    margin: 20px 0;
+    /* Added margin for spacing */
+}
+
+.clickable-box:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.box-image {
+    width: 40%;
+    height: 100%;
+    /* Changed to 100% to fill height */
+    object-fit: cover;
+}
+
+.box-content {
+    padding: 16px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.box-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+}
+
+.box-content p {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
 }
